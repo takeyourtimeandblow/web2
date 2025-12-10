@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+</style>
+<body>
+<form action="/astronaut_selection" method="post">
+  <table>
+    <tr>
+      <th><label for="name">Фамилия:</label></th>
+      <th><input type="text" id="name" name="user_surname" /></th>
+    </tr>
+    <tr>
+      <td><label for="name">Имя:</label></td>
+      <td><input type="text" id="name" name="user_name" /></td>
+    </tr>
+    <tr>
+      <td><label for="mail">Email:</label></td>
+      <td><input type="email" id="mail" name="user_email" /></td>
+    </tr>
+    <tr>
+      <td><label for="name">Образование:</label></td>
+      <td><input type="text" id="name" name="user_education" /></td>
+    </tr>
+    <tr>
+      <td><label for="select">Профессия:</label></td>
+      <td>
+          <select id="select" name="user_select">
+            <option>инженер-исследователь</option>
+            <option>пилот</option>
+            <option>строитель</option>
+            <option>экзобиолог</option>
+            <option>врач</option>
+            <option>инженер по терраформированию</option>
+            <option>климатолог</option>
+            <option>специалист по радиационной защите</option>
+            <option>астрогеолог</option>
+            <option>гляциолог</option>
+            <option>инженер жизнеобеспечения</option>
+            <option>метеоролог</option>
+            <option>оператор марсохода</option>
+            <option>киберинженер</option>
+            <option>штурман</option>
+            <option>пилот дронов</option>
+          </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Пол:</td>
+      <td>
+        <div class="form-check" id="check" name="user_sex_check">
+          <input class="form-check-input" type="radio" name="user_sex" id="male" value="male" checked>
+          <label class="form-check-label" for="male">М</label>
+          <input class="form-check-input" type="radio" name="user_sex" id="female" value="female">
+          <label class="form-check-label" for="female">Ж</label>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Мотивация:</td>
+      <td>
+        <input type="motivation" id="motivation" name="user_motivation" />
+      </td>
+    </tr>
+    <tr>
+      <td>Готовы ли остаться на Марсе?</td>
+      <td>
+        <input type="checkbox" name="stay_on_mars" value="stay"/>Останусь!
+      </td>
+    </tr>
+  </table>
+  <button type="submit" class="btn btn-primary">Записаться</button>
+</form>
+
+</body>
+</html>
